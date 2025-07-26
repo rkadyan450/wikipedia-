@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Indian Cricket - Wikipedia Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: "Linux Libertine", Georgia, Times, serif;
+      font-size: 16px;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #202122;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f8f9fa;
+      padding: 10px 20px;
+      border-bottom: 1px solid #a2a9b1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+    .toc {
+      width: 200px;
+      padding-right: 20px;
+      border-right: 1px solid #ccc;
+    }
+    .toc h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .toc ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .toc ul li {
+      margin: 6px 0;
+    }
+    .toc a {
+      text-decoration: none;
+      color: #0645ad;
+    }
+    .main {
+      flex: 3;
+      padding: 0 20px;
+    }
+    .infobox {
+      width: 270px;
+      border: 1px solid #aaa;
+      background: #f8f9fa;
+      padding: 10px;
+      font-size: 90%;
+    }
+    .infobox img {
+      max-width: 100%;
+      margin: 5px 0;
+    }
+    .infobox-title {
+      background: #cedff2;
+      padding: 4px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      border-bottom: 1px solid #ccc;
+      margin-top: 30px;
+    }
+    p, ul {
+      margin: 10px 0;
+    }
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      padding: 15px;
+      text-align: center;
+      border-top: 1px solid #ccc;
+      background: #f8f9fa;
+    }
+    img.full-img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+    }
+
+    /* Dark Mode */
+    .dark-mode {
+      background-color: #1a1a1a;
+      color: #f5f5f5;
+    }
+    .dark-mode a {
+      color: #a8c7fa;
+    }
+    .dark-mode header,
+    .dark-mode .infobox,
+    .dark-mode footer {
+      background-color: #2a2a2a;
+      color: #fff;
+    }
+    .dark-mode .infobox-title {
+      background: #444;
+    }
+    .dark-mode .toc {
+      border-right: 1px solid #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Wikipedia</div>
+    <div class="toggle">
+      <label for="darkMode">Dark Mode</label>
+      <input type="checkbox" id="darkMode">
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="toc">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#bcci">BCCI</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#ipl">Indian Premier League</a></li>
+        <li><a href="#famous">Famous Players</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <h1 id="overview">Indian Cricket</h1>
+      <img src="https://www.livemint.com/lm-img/img/2025/03/09/optimize/Emirates-Cricket-Champions-Trophy-330_1741543479325_1741543503712.jpg" 
+     alt="Indian Cricket Team" 
+     style="width: 250px; height: auto; float: right; margin: 10px; border: 1px solid #ccc; padding: 3px; background: white;">
+
+      <p><b>Indian cricket</b> is the most followed sport in India, governed by the <a href="#bcci">Board of Control for Cricket in India</a> (BCCI). India competes in all ICC formats and is known for its world-class players and passionate fan base.</p>
+
+      <h2 id="history">History</h2>
+      <p>Cricket was introduced in India during British colonial rule. India’s national team played its first official Test match in 1932 at Lord’s, London. The turning point came in 1983 when India won its first ICC World Cup under Kapil Dev.</p>
+      <img class="full-img" src="https://images.icc-cricket.com/image/upload/t_ratio21_9-size60-webp/prd/cegkfqeodwgxtyqyg7di" alt="India wins 1983 Cricket World Cup">
+
+      <h2 id="bcci">Board of Control for Cricket in India (BCCI)</h2>
+      <p>The BCCI, established in 1928, is the national governing body for cricket in India and the richest cricket board in the world. It organizes India’s domestic and international fixtures and controls the Indian Premier League.</p>
+
+      <h2 id="achievements">International Achievements</h2>
+      <ul>
+        <li>🏆 <b>World Cup Champions:</b> 1983, 2011</li>
+        <li>🏆 <b>ICC T20 World Cup:</b> 2007</li>
+        <li>🏆 <b>Champions Trophy:</b> 2002 (shared), 2013</li>
+        <li>🥈 <b>World Test Championship Runners-up:</b> 2021, 2023</li>
+      </ul>
+      <img class="full-img" src="https://caughtatpoint.com/wp-content/uploads/2021/04/the-true-meaning-of-Indias-2011-world-cup-win-e1617360611267.jpg" alt="India wins 2011 World Cup">
+
+      <h2 id="ipl">Indian Premier League (IPL)</h2>
+      <p>The IPL, started in 2008, is a global T20 league featuring franchise teams from major Indian cities. It’s the world’s most lucrative cricket tournament, attracting international stars and massive sponsorship.</p>
+      <img class="full-img" style="width: 100%; max-height: 400px; object-fit: contain; border: 1px solid #ccc;" src="https://static.india.com/wp-content/uploads/2020/08/IPL-Logo.jpg?impolicy=Medium_Resize&w=1200&h=800" alt="IPL logo">
+
+      <h2 id="famous">Famous Indian Cricketers</h2>
+      <ul>
+        <li><b>Sachin Tendulkar</b> – “The God of Cricket” and highest run-scorer in international cricket</li>
+        <li><b>MS Dhoni</b> – India’s most successful captain, winner of all ICC trophies</li>
+        <li><b>Virat Kohli</b> – Modern legend and run-machine</li>
+        <li><b>Rohit Sharma</b> – Highest individual score in ODIs (264)</li>
+        <li><b>Kapil Dev</b> – Leader of the 1983 World Cup-winning team</li>
+      </ul>
+      <img class="full-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Sachin_Tendulkar_at_MRF_Promotion_Event.jpg" alt="Sachin Tendulkar">
+      <img class="full-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/MS_Dhoni_2016.jpg" alt="MS Dhoni">
+      <img class="full-img" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Virat_Kohli_2019.jpg" alt="Virat Kohli">
+
+      <h2 id="references">References</h2>
+      <ol>
+        <li><a href="https://www.bcci.tv">BCCI Official Website</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/India_national_cricket_team">India national cricket team - Wikipedia</a></li>
+        <li><a href="https://www.icc-cricket.com">International Cricket Council (ICC)</a></li>
+        <li><a href="https://www.espncricinfo.com">ESPNcricinfo</a></li>
+      </ol>
+    </main>
+
+    <aside class="infobox">
+      <div class="infobox-title">Indian Cricket</div>
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="India Flag">
+      <p><b>Sport:</b> Cricket</p>
+      <p><b>Governing body:</b> BCCI</p>
+      <p><b>Founded:</b> 1928</p>
+      <p><b>First match:</b> 1932</p>
+      <p><b>ICC status:</b> Full member</p>
+      <p><b>World Cup Wins:</b> 1983, 2011</p>
+      <p><b>T20 World Cup:</b> 2007</p>
+    </aside>
+  </div>
+
+  <footer>
+    Wikipedia Clone — Indian Cricket | For Educational Use Only
+  </footer>
+
+  <script>
+    const darkToggle = document.getElementById("darkMode");
+    darkToggle.addEventListener("change", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>
